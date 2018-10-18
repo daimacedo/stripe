@@ -4,7 +4,7 @@ Para executar o projeto de testes é necessário ter "instalado" Maven 3.5 + e J
 
 1- Realizar clone do projeto em uma pasta local `git@github.com:daimacedo/stripe.git`
 
-2- Entrar na pasta do projeto `stripe` e rodar o comando `mvn test`
+2- Entrar na pasta do projeto `stripe` e rodar o comando `mvn clean install`
 
 3- Após a build terminar (provavelmente vai terminar com falha e explicarei os motivos abaixo) rodar o seguinte comando para gerar o relatório: `mvn cluecumber-report:reporting`
 
