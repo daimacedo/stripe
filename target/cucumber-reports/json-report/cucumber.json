@@ -1,0 +1,419 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Send a CV successfully",
+        "description": "",
+        "id": "apply-for-a-job-position;send-a-cv-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 286202636,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JobTest.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1735947407,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactTest.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15778567324,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the job\u0027s page",
+            "match": {
+              "location": "JobTest.i_am_on_the_job_s_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31721956416,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Fill the information\u0027s fields",
+            "match": {
+              "location": "JobTest.i_Fill_the_information_s_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20096968005,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id\u003d\u0027application_confirmation\u0027]/h1[.\u003d\u0027Thank you for applying.\u0027]\"}\n  (Session info: chrome\u003d70.0.3538.67)\n  (Driver info: chromedriver\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform\u003dLinux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027000358\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-36-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:39409}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dLINUX, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f), userDataDir\u003d/tmp/.com.google.Chrome.Q0BFbZ}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.67, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: f5da1a3fcc70999cdb2bf9fdbf91229e\n*** Element info: {Using\u003dxpath, value\u003d//div[@id\u003d\u0027application_confirmation\u0027]/h1[.\u003d\u0027Thank you for applying.\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat pages.JobsPage.getSucessfullMessage(JobsPage.java:113)\n\tat stepdefinitions.JobTest.i_should_see_a_sucessfull_job_apply_message(JobTest.java:62)\n\tat ✽.Then I should see a sucessfull job apply message(SendCV.feature:7)\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I should see a sucessfull job apply message",
+            "match": {
+              "location": "JobTest.i_should_see_a_sucessfull_job_apply_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Send a CV with empty field",
+        "description": "",
+        "id": "apply-for-a-job-position;send-a-cv-with-empty-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 281919389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JobTest.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1254322996,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactTest.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11440039153,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the job\u0027s page",
+            "match": {
+              "location": "JobTest.i_am_on_the_job_s_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27997358115,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Fill the information\u0027s fields",
+            "match": {
+              "location": "JobTest.i_Fill_the_information_s_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107658589,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I dont fill the firstName-Job",
+            "match": {
+              "location": "JobTest.i_dont_fill_the_firstName_Job()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 20033420165,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027field-error-msg\u0027]\"}\n  (Session info: chrome\u003d70.0.3538.67)\n  (Driver info: chromedriver\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform\u003dLinux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027000358\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-36-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:34435}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dLINUX, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f), userDataDir\u003d/tmp/.com.google.Chrome.fZwYR5}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.67, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 87e4d3c04bf46bccd365d0d6350c63f4\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027field-error-msg\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.getText(Unknown Source)\n\tat pages.JobsPage.getMessageRequired(JobsPage.java:148)\n\tat stepdefinitions.JobTest.the_firstName_Job_should_be_marked_as_required(JobTest.java:73)\n\tat ✽.Then The firstName-Job should be marked as required(SendCV.feature:13)\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "The firstName-Job should be marked as required",
+            "match": {
+              "location": "JobTest.the_firstName_Job_should_be_marked_as_required()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Send a CV with empty field",
+        "description": "",
+        "id": "apply-for-a-job-position;send-a-cv-with-empty-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 307398252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JobTest.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 873773564,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactTest.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8136231226,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the job\u0027s page",
+            "match": {
+              "location": "JobTest.i_am_on_the_job_s_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27194446484,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Fill the information\u0027s fields",
+            "match": {
+              "location": "JobTest.i_Fill_the_information_s_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100695298,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I dont fill the lastName-Job",
+            "match": {
+              "location": "JobTest.i_dont_fill_the_lastName_Job()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 20071172885,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027field-error-msg\u0027]\"}\n  (Session info: chrome\u003d70.0.3538.67)\n  (Driver info: chromedriver\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform\u003dLinux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027000358\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-36-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:39967}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dLINUX, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f), userDataDir\u003d/tmp/.com.google.Chrome.vs0SNo}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.67, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 8673818f951856be31a8e77d3f0a5551\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027field-error-msg\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.getText(Unknown Source)\n\tat pages.JobsPage.getMessageRequired(JobsPage.java:148)\n\tat stepdefinitions.JobTest.the_lastName_Job_should_be_marked_as_required(JobTest.java:84)\n\tat ✽.Then The lastName-Job should be marked as required(SendCV.feature:13)\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "The lastName-Job should be marked as required",
+            "match": {
+              "location": "JobTest.the_lastName_Job_should_be_marked_as_required()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Send a CV with empty field",
+        "description": "",
+        "id": "apply-for-a-job-position;send-a-cv-with-empty-field;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 301663707,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JobTest.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 859000028,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactTest.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9535655420,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the job\u0027s page",
+            "match": {
+              "location": "JobTest.i_am_on_the_job_s_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26906331315,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Fill the information\u0027s fields",
+            "match": {
+              "location": "JobTest.i_Fill_the_information_s_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117787600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I dont fill the email-Job",
+            "match": {
+              "location": "JobTest.i_dont_fill_the_email_Job()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 20013271761,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027field-error-msg\u0027]\"}\n  (Session info: chrome\u003d70.0.3538.67)\n  (Driver info: chromedriver\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform\u003dLinux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027000358\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-36-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:41721}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dLINUX, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f), userDataDir\u003d/tmp/.com.google.Chrome.d2NwoX}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.67, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 8afc8c68745ffb9e65aa517c6f43f52c\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027field-error-msg\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.getText(Unknown Source)\n\tat pages.JobsPage.getMessageRequired(JobsPage.java:148)\n\tat stepdefinitions.JobTest.the_email_Job_should_be_marked_as_required(JobTest.java:95)\n\tat ✽.Then The email-Job should be marked as required(SendCV.feature:13)\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "The email-Job should be marked as required",
+            "match": {
+              "location": "JobTest.the_email_Job_should_be_marked_as_required()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Send a CV with empty field",
+        "description": "",
+        "id": "apply-for-a-job-position;send-a-cv-with-empty-field;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 233048940,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JobTest.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 853330351,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactTest.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6660693743,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the job\u0027s page",
+            "match": {
+              "location": "JobTest.i_am_on_the_job_s_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27046874985,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Fill the information\u0027s fields",
+            "match": {
+              "location": "JobTest.i_Fill_the_information_s_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108789784,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I dont fill the phone-Job",
+            "match": {
+              "location": "JobTest.i_dont_fill_the_phone_Job()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 20054786183,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027field-error-msg\u0027]\"}\n  (Session info: chrome\u003d70.0.3538.67)\n  (Driver info: chromedriver\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform\u003dLinux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027000358\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.15.0-36-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:37751}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dLINUX, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f), userDataDir\u003d/tmp/.com.google.Chrome.vwmRHL}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d70.0.3538.67, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: b0d9e8901b74c1e4d114101f1eff3251\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027field-error-msg\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.getText(Unknown Source)\n\tat pages.JobsPage.getMessageRequired(JobsPage.java:148)\n\tat stepdefinitions.JobTest.the_phone_Job_should_be_marked_as_required(JobTest.java:105)\n\tat ✽.Then The phone-Job should be marked as required(SendCV.feature:13)\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "The phone-Job should be marked as required",
+            "match": {
+              "location": "JobTest.the_phone_Job_should_be_marked_as_required()"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Apply for a job position",
+    "description": "I want to be part of the stripe\u0027s team",
+    "id": "apply-for-a-job-position",
+    "keyword": "Feature",
+    "uri": "SendCV.feature"
+  }
+]
