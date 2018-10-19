@@ -1,10 +1,7 @@
 package stepdefinitions;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -18,10 +15,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import constantes.URLs;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import hooks.SetUp;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.ContactPage;
 import pages.HomePage;
@@ -121,14 +119,13 @@ public class ContactTest {
 	}
 
 	@After
-	public void tearDown(Scenario cenario) throws IOException{
-		if(cenario.isFailed()) {
-			SimpleDateFormat formatoData = new SimpleDateFormat("yyyyMMddHH:mm:ss");
-			Calendar data = Calendar.getInstance();
-			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("target/screenshots/" + cenario.getName().toString() + "_"
-					+ formatoData.format(data.getTime()).toString() + ".png"));
+	public void tearDown(Scenario cenario) throws IOException {
+
+		Util util = new Util();
+		if (cenario.isFailed()) {
+			util.takeScreeShot(driver, cenario);
 		}
+
 		driver.close();
 	}
 

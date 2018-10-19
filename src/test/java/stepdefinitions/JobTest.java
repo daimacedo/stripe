@@ -9,22 +9,18 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Test;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import constantes.URLs;
-import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import hooks.SetUp;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pages.ContactPage;
 import pages.HomePage;
 import pages.JobsPage;
 import util.Util;
@@ -108,12 +104,9 @@ public class JobTest{
 
 	@After
 	public void tearDown(Scenario cenario) throws IOException{
+		Util util = new Util();
 		if(cenario.isFailed()) {
-			SimpleDateFormat formatoData = new SimpleDateFormat("yyyyMMddHH:mm:ss");
-			Calendar data = Calendar.getInstance();
-			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("target/screenshots/" + cenario.getName().toString() + "_"
-					+ formatoData.format(data.getTime()).toString() + ".png"));
+			util.takeScreeShot(driver, cenario);
 		}
 		driver.close();
 	}

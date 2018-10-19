@@ -42,14 +42,14 @@ public class Util {
 		wait.until(ExpectedConditions.visibilityOfAllElements((List<WebElement>)e));
 	}
 	
-//	public void takeScreeShot(WebDriver driver, Scenario cenario) throws IOException {
-//		
-//		SimpleDateFormat formatoData = new SimpleDateFormat("yyyyMMddHH:mm:ss");
-//		Calendar data = Calendar.getInstance();
-//		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(scrFile, new File("target/screenshots/" + cenario.getName().toString() + "_" + formatoData.format(data.getTime()).toString() + ".png"));
-//	
-//	}
+	public void takeScreeShot(WebDriver driver, Scenario cenario) throws IOException {
+		
+		SimpleDateFormat formatoData = new SimpleDateFormat("yyyyMMddHH:mm:ss");
+		Calendar data = Calendar.getInstance();
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("target/screenshots/" + cenario.getName().toString() + "_" + formatoData.format(data.getTime()).toString() + ".png"));
+	
+	}
 	
 	public void lerArquivo(String path, Properties prop) {
 
